@@ -103,6 +103,7 @@ const Routes = ({ match, location }, { store }) => {
       <div className='body'>
         <Switch>
           <Route exact path='/' component={Home} />
+          <Route exact path='/index.html' component={Home} />
           <Route path='/repository' children={() => (
             <Switch>
               <Route exact path='/repository' component={JoinedRepositoryList} />
